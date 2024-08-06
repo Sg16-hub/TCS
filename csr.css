@@ -1,0 +1,431 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  /* nav */
+  .nav{
+    width: 100%;
+    height: 7.5vh;
+    /* position: sticky; */
+    background-color:black;
+    top: 0px;
+    border-bottom: 1px solid white;
+  }
+  .logo{
+    position:absolute;
+    margin-left: 10px;
+  }
+  .logo img{
+    height: 7.5vh;
+  }
+  .menu{
+    float: right; 
+  }
+  .menu ul{
+    margin-top: 17px;
+    margin-right: 10px;
+  
+  }
+  .menu ul li{
+    display:inline;
+  }
+  .menu ul li a{
+    text-decoration: none;
+    font-size:15px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: aliceblue;
+  }
+  .menu ul li a:hover{
+    border: 2px solid white;
+    background-color: rgba(112, 106, 106, 0.5);
+    border-radius: 10px;
+  } 
+/* Banner */
+.ban{
+  background-image: url(./csrb.jpeg);
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banrap{
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0,0,0,0.5);
+}
+.banrap1{
+  margin: auto;
+  /* border: 2px solid white; */
+  padding-top: 375px;
+}
+.company{
+  width: 50%;
+  margin: left;
+}
+.banrap1 h1{
+  font: bold;
+  text-align: center;
+  padding-left: 15px;
+  color:rgb(198, 9, 126);
+  font-size: 85px;
+}
+.banrap p{
+  padding-left: 250px;
+  font: italic;
+  text-align: center;
+  color: ghostwhite;
+  font-size: 40px;
+}
+/* mid */
+.mid{
+  height: 60vh;
+  width: 100%;
+  background-color: rgb(245, 250, 250);
+}
+.midrap{
+  height: 60vh;
+  width: 70%;
+  background-color: rgb(245, 250, 250);
+  margin: auto;
+  padding-top: 40px;
+}
+.mr1{
+  height: 30vh;
+  width: 40%;
+  background-color: rgb(245, 250, 250);
+  float: left;
+  padding-top: 60px;
+}
+.mr1 h1{
+  text-align: left;
+  font-size: 30px;
+  font-style: italic;
+  color: deeppink;
+}
+.mr1 p{
+  text-align: left;
+  font-size: 20px;
+  padding-top: 20px;
+  color: black;
+}
+.mr2{
+  height: 40vh;
+  width: 35%;
+  background-color:rgb(245, 250, 250);
+  float: right; 
+  padding-top: 40px;
+}
+.mr2 img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  border-bottom: 2px solid deeppink;
+  border-top: 2px solid deeppink;
+  border-left:2px solid deeppink;
+  border-right:2px solid deeppink;
+}
+/* timeline */
+
+.bd {
+  background-color: #0d0d0d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+/* recognization */
+
+.rc{
+  height: 40vh;
+  width: 100%;
+  background-color: rgb(249, 251, 251);
+  margin-top: 20px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  margin-top: 20px;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* FT */
+.ft{
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(60, 60, 63);
+}
+.ftrap{
+  width: 80%;
+  height: 40vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.ftbx1{
+  margin-top: 20px;
+  padding: 10px;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+.ftbx1rap{
+  width: 100%;
+  margin-top: 20px;
+}
+.ftbx1rap h1{
+  font-size: 30px;
+  color: #f1f1f1;
+}
+.ftbx1rap ul{
+  margin-top: 10px;
+}
+.ftbx1rap ul li{
+  display: inline;
+}
+.ftbx1rap ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align:center;
+  color:aliceblue;
+}
+.ftbx2{
+  margin-top: 20px;
+  padding: 10px;
+  height: 40vh;
+  width: 100%;
+}
+.ftbx2rap{
+  width: 100%;
+  margin-top: 20px;
+}
+.ftbx2rap h1{
+  color: #f1f1f1;
+  font-size: 30px;
+}
+.ftbx2rap ul{
+  margin-top: 10px;
+}
+.ftbx2rap ul li{
+  display: inline;
+}
+.ftbx2rap ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align:center;
+  color:aliceblue;
+}
+.ftbx3{
+  margin-top: 20px;
+  padding: 10px;
+  height: 40vh;
+  width: 100%;
+}
+.ftbx3rap{
+  width: 100%;
+  margin-top: 20px;
+}
+.ftbx3rap h1{
+  color: #f1f1f1;
+  font-size: 30px;
+}
+.ftbx3rap ul{
+  margin-top: 25px;
+}
+.ftbx3rap ul li{
+  display: inline;
+}
+.ftbx3rap ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align:center;
+  color:aliceblue;
+}
+/* sc */
+.ftr{
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(10, 10, 10);
+}
+.ftr1{
+  width: 50%;
+  height: 10vh;
+  float: left;
+  padding-top: 20px;
+}
+.ftr1 img{
+  height: 10vh;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.app{
+  float: right;
+  padding-top: 20px;
+}
+.app ul li{
+  display: inline;
+}
+.app ul li a{
+  color:aliceblue;
+  font-size: 30px;
+  padding: 20px;
+}
+.ftr2{
+  width: 40%;
+  height: 10vh;
+  float: right;
+  padding-top: 20px;
+}
+.ftr2 p{
+  font-size: 18px;
+  color: #f2f2f2;
+  padding-top:20px;
+  float: left;
+}
+.hm{
+  float: right;
+}
+.hm li{
+  display: inline;  
+}
+.hm li a{
+  color:aliceblue;
+  font-size: 60px;
+  padding-right: 50px;
+}

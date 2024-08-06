@@ -1,0 +1,287 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .nav{
+    width: 100%;
+    height: 7.5vh;
+    /* position: sticky; */
+    background-color:black;
+    top: 0px;
+    border-bottom: 1px solid white;
+  }
+  .logo{
+    position:absolute;
+    margin-left: 10px;
+  }
+  .logo img{
+    height: 7.5vh;
+  }
+  .menu{
+    float: right; 
+  }
+  .menu ul{
+    margin-top: 17px;
+    margin-right: 10px;
+  
+  }
+  .menu ul li{
+    display:inline;
+  }
+  .menu ul li a{
+    text-decoration: none;
+    font-size:15px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: aliceblue;
+  }
+  .menu ul li a:hover{
+    border: 2px solid white;
+    background-color: rgba(252, 243, 243, 0.5);
+    border-radius: 10px;
+  }
+  
+ /* mid 1 */
+.mid1{
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+}
+.mid1r{
+    height: 30vh;
+    width: 80%;
+    margin: auto;
+}
+.m1b1{
+    height: 30vh;
+    width: 60%;
+    float: left;
+}
+.m1b1 h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 80px;
+    color: aliceblue;
+}
+.m1b2{
+    height: 30vh;
+    width: 40%;
+    float: right;
+}
+.m1b2 p{
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
+    color: aliceblue;
+}
+ /* mid 2 */
+ .mid2{
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+}
+.mid2r{
+    height: 50vh;
+    width: 60%;
+    margin: auto;
+    border-top: 1px solid white;
+}
+.m2b1{
+    margin-top: 40px;
+    height: 30vh;
+    width: 40%;
+    float: left;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-left:1px solid white ;
+    border-right:1px solid white;
+}
+.m2b1 h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    color: blue;
+}
+.m2b1 a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+}
+.m2b1 a p{
+    padding-left: 80px;
+}
+.m2b2{
+    margin-top: 40px;
+    height: 30vh;
+    width: 40%;
+    float: right;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-left:1px solid white ;
+    border-right:1px solid white;
+}
+.m2b2 h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    color: red;
+}
+.m2b2 a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+}
+.m2b2 a p{
+    padding-left: 80px;
+}
+/* FT */
+.ft{
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(60, 60, 63);
+}
+.ftrap{
+  width: 80%;
+  height: 40vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.ftbx1{
+  margin-top: 20px;
+  padding: 10px;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+.ftbx1rap{
+  width: 100%;
+  margin-top: 20px;
+}
+.ftbx1rap h1{
+  font-size: 30px;
+  color: #f1f1f1;
+}
+.ftbx1rap ul{
+  margin-top: 10px;
+}
+.ftbx1rap ul li{
+  display: inline;
+}
+.ftbx1rap ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align:center;
+  color:aliceblue;
+}
+.ftbx2{
+  margin-top: 20px;
+  padding: 10px;
+  height: 40vh;
+  width: 100%;
+}
+.ftbx2rap{
+  width: 100%;
+  margin-top: 20px;
+}
+.ftbx2rap h1{
+  color: #f1f1f1;
+  font-size: 30px;
+}
+.ftbx2rap ul{
+  margin-top: 10px;
+}
+.ftbx2rap ul li{
+  display: inline;
+}
+.ftbx2rap ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align:center;
+  color:aliceblue;
+}
+.ftbx3{
+  margin-top: 20px;
+  padding: 10px;
+  height: 40vh;
+  width: 100%;
+}
+.ftbx3rap{
+  width: 100%;
+  margin-top: 20px;
+}
+.ftbx3rap h1{
+  color: #f1f1f1;
+  font-size: 30px;
+}
+.ftbx3rap ul{
+  margin-top: 25px;
+}
+.ftbx3rap ul li{
+  display: inline;
+}
+.ftbx3rap ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align:center;
+  color:aliceblue;
+}
+/* sc */
+.ftr{
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(10, 10, 10);
+}
+.ftr1{
+  width: 50%;
+  height: 10vh;
+  float: left;
+  padding-top: 20px;
+}
+.ftr1 img{
+  height: 10vh;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.app{
+  float: right;
+  padding-top: 20px;
+}
+.app ul li{
+  display: inline;
+}
+.app ul li a{
+  color:aliceblue;
+  font-size: 30px;
+  padding: 20px;
+}
+.ftr2{
+  width: 40%;
+  height: 10vh;
+  float: right;
+  padding-top: 20px;
+}
+.ftr2 p{
+  font-size: 18px;
+  color: #f2f2f2;
+  padding-top:20px;
+  float: left;
+}
+.hm{
+  float: right;
+}
+.hm li{
+  display: inline;  
+}
+.hm li a{
+  color:aliceblue;
+  font-size: 60px;
+  padding-right: 50px;
+}

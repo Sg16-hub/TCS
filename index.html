@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>TCS</title>
+</head>
+
+<body>
+<!-- Nav bar -->
+    
+<div class="nav">
+    <div class="logo">
+        <img src="tcs.jpg" alt="">
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="./index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+            <li><a href="./cr.html"><i class="fa fa-briefcase" aria-hidden="true"></i> Careers</a></li> 
+            <li><a href="./ind.html"><i class="fa fa-line-chart" aria-hidden="true"></i> industry</a></li> 
+            <li><a href="./au.html"><i class="fa fa-users" aria-hidden="true"></i> about us</a></li>
+            <li><a href="./cu.html" class="split"><i class="fa fa-fw fa-envelope"></i>contact us</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- banner -->
+<div class="ban">
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./ban1.jpeg" style="width:100%">
+    <div class="text">TCS survey: The future of operations</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./ban2.jpeg" style="width:100%">
+    <div class="text">Banking beyond boundaries</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="./ban3.jpeg" style="width:100%">
+    <div class="text">Recognize risks, realize rewards</div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+  </script>
+</div>
+
+  <!-- Middle -->
+  <div class="mid">
+    <div class="midrap">
+      <div class="box1">
+        <div class="box1rap">
+          <img src="./b1.jpeg" alt="Avatar" style="width:100px">
+        </div>
+      </div>
+      <div class="box2">
+        <div class="box2rap">
+          <img src="./b2.jpeg" alt="Avatar" style="width:100px">
+        </div>
+      </div>
+      <div class="box3">
+        <div class="box3rap">
+          <img src="./b3.jpeg" alt="Avatar" style="width:100px">
+        </div>
+      </div>
+      <div class="box4">
+        <div class="box4rap">
+          <img src="./b4.jpeg" alt="Avatar" style="width:100px">
+        </div>
+      </div>
+      <div class="box5">
+        <div class="box5rap">
+          <img src="./b5.jpeg" alt="Avatar" style="width:100px">
+        </div>
+      </div>
+      <div class="box6">
+        <div class="box6rap">
+          <img src="./b6.jpeg" alt="Avatar" style="width:100px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- middle 1 -->
+<div class="mid1">
+  <div class="mid1rap">
+    <div class="mid1box1">
+      <h1>TATA GROUP</h1>
+      <p>LEADERSHIP WITH TRUST.</p>
+      <P>A BRAND THAT INDIA VALUES.</P>
+    </div>
+    <div class="mid1box2">
+      <img src="./tata.png" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- mid2 -->
+<div class="mid2">
+  <div class="mid2rap">
+    <div class="mid2h">
+       <h1>INLIGHTS BY INTEREST</h1>
+    </div>
+    <div class="mid2p">
+      <div class="container1">
+        <img src="./m2b1.jpg" alt=" " class="image1">
+        <div class="overlay1">
+          <div class="text1"><a href="#">THE METRAVERSE MEET MODERN MEDICINE.</a></div>
+        </div>
+      </div>
+      <div class="container2">
+        <img src="./m2b2.jpg" alt=" " class="image2">
+        <div class="overlay2">
+          <div class="text2"><a href="#">THE c-suite's CYBERSECURITY CONSIDERATIONS</a></div>
+        </div>
+      </div>
+      <div class="container3">
+        <img src="./m2b3.jpg" alt=" " class="image3">
+        <div class="overlay3">
+          <div class="text3"><a href="#">FLATTENING FINTECH FRAUD</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- mid3 -->
+<div class="mid3">
+  <div class="mid3h">
+    <h1>DISCOVER THE TCS DIFFERNCE</h1>
+  </div>
+  <div class="mid3m">
+    <div class="hero-image">
+      <div class="hero-text">
+        <p>Our global study finds that cloud and AI are a priority despite headwinds</p>
+        <button>learn more</button>
+      </div>
+    </div>
+  </div>
+  <div class="mid3f">
+    <div class="mid3b1">
+      <h1>AI & CLOUD</h1>
+      <P>75% of organizations invested in AI & ML in the past 2 years.</P>
+    </div>
+    <div class="mid3b2">
+      <h1>RECOGNIZATION</h1>
+      <P>IDC marketscape lauds our holistic approach.</P>
+    </div>
+    <div class="mid3b3">
+      <h1>TCS BANCS</h1>
+      <P>Building a bank for the future.</P>
+    </div>
+    <div class="mid3b4">
+      <h1>RECOGNIZATION</h1>
+      <P>Women are 42% of our 9000+ workforce.</P>
+    </div>
+  </div>
+</div>
+
+<!-- mid4 -->
+<div class="mid4">
+  <div class="mid4r1">
+    <img src="./m6.jpeg" alt="">
+  </div>
+  <div class="mid4r2">
+    <div class="mid4r2a">
+      <h1>TCS transforms businesses through technology.</h1>
+      <p>We help businesses successfully navigate digital transformation and drive real growth, drawing on the combined power of experience and contextual knowledge, across a vast ecosystem of expertise.
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- mid5 -->
+<div class="mid5">
+  <div class="mid5rap">
+    <div class="mid5h">
+       <h1>BELIFE IN ACTION</h1>
+    </div>
+    <div class="mid5p">
+      <div class="container4">
+        <img src="./mid5a.jpeg" alt="" class="image4">
+        <div class="overlay4">
+          <div class="text4"><a href="#">A new ,nimble NWC</a></div>
+        </div>
+      </div>
+      <div class="container5">
+        <img src="./mid5b.jpeg" alt=" " class="image5">
+        <div class="overlay5">
+          <div class="text5"><a href="#">Gaining momentum with AI</a></div>
+        </div>
+      </div>
+      <div class="container6">
+        <img src="./mid5c.jpeg" alt=" " class="image6">
+        <div class="overlay6">
+          <div class="text6"><a href="#">KAUTEX kickstarts automation</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- mid6 -->
+<div class="mid6">
+  <div class="mid6r1">
+    <img src="./m4.jpeg" alt="">
+  </div>
+  <div class="mid6r2">
+    <div class="mid6r2a">
+      <h1>We build greater futures through innovation and collective knowledge.</h1>
+      <p>TCS is an IT services, consulting and business solutions organization that has been partnering with many of the world’s largest businesses in their transformation journeys for over 50 years. </p>
+    </div>
+  </div>
+</div>
+
+<!-- FT -->
+  <div class="ft">
+      <div class="ftrap">
+          <div class="ftbx1">
+              <div class="ftbx1rap">
+                  <h1>
+                      SERVICES
+                  </h1>
+                  <ul>
+                      <li>
+                          <a href="./ind.html">industry</a><br>
+                          <a href="./cr.html">opportunities</a><br>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="ftbx2">
+              <div class="ftbx2rap">
+                  <h1>
+                      OUR STORIES
+                  </h1>
+                  <ul>
+                      <li>
+                          <a href="./nr.html">News room</a><br>
+                          <a href="./csr.html">Csr</a><br>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="ftbx3">
+              <div class="ftbx3rap">
+                  <h1>
+                      CONTACT US
+                  </h1>
+                  <ul>
+                      <li>
+                          <a href="./ros.html">Request of services</a><br>
+                          <a href="./inv.html">Investor infos</a><br>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<!-- sc -->
+<div class="ftr">
+    <div class="ftr1">
+      <img src="./tcs.jpg" alt=" ">
+      <div class="app">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/TataConsultancyServices"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/user/TCSGlobal"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/TCS"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/tcsglobal/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/tata-consultancy-services/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr2">
+      <p>© Designed by SHREYA GHOSH & SOHAM DAS</p>
+      <div class="hm">
+          <li>
+            <a href="./index.html"><i class="fa fa-fw fa-home" aria-hidden="true"></i></a>
+          </li>
+      </div>
+    </div> 
+</div>
+
+</body>
+</html>
